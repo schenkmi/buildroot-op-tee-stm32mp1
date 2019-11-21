@@ -1,6 +1,12 @@
 # buildroot-op-tee-stm32mp1
 Buildroot based STM32MP1 example for OP-TEE
 
+## Clone repository with submodules
+You must clone this project with
+```
+git clone --recursive https://github.com/schenkmi/buildroot-op-tee-stm32mp1.git
+```
+
 ## Build instructions plain Linux
 
 You can build the image with
