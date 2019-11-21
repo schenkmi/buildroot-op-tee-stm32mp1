@@ -1,0 +1,2 @@
+name: OPTEE
+desc: Buildroot external tree to add support for OP-TEE playground.
