@@ -11,6 +11,13 @@ You must clone this project with
 git clone --recursive https://github.com/schenkmi/buildroot-op-tee-stm32mp1.git
 ```
 
+## Preparing (once)
+As we work with submodule for buildroot you need once delete a patch file which STM already has patched in their own repository.
+```
+cd buildroot-op-tee-stm32mp1
+rm buildroot/boot/optee-os/0001-scripts-pem_to_pub_c.py-sign.py-use-pycryptodomex.patch
+```
+
 ## Build instructions plain Linux
 
 You can build the image with

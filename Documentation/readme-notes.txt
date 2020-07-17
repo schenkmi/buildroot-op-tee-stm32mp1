@@ -560,3 +560,23 @@ image sdcard.img {
 	}
 }
 
+Git submodule
+
+git clone git@github.com:schenkmi/buildroot-op-tee-stm32mp1.git
+cd buildroot-op-tee-stm32mp1
+git checkout feature/update-20200716
+git submodule update --init --recursive
+
+git clone --recursive --branch feature/update-20200716 git@github.com:schenkmi/buildroot-op-tee-stm32mp1.git
+
+boot/optee-os/0001-scripts-pem_to_pub_c.py-sign.py-use-pycryptodomex.patch
+
+git log --oneline
+
+git submodule foreach git tag -l
+git submodule foreach git tag -m "tagName" tagName
+
+
+
+
+
