@@ -576,6 +576,8 @@ git log --oneline
 git submodule foreach git tag -l
 git submodule foreach git tag -m "tagName" tagName
 
+git tag -m "update to components form openstlinux-5.4-dunfell-mp1-20-06-24 and buildroot 2020.05" V1.1.0
+git push --tags
 
 
 
