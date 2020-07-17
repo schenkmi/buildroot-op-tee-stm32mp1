@@ -1,10 +1,21 @@
 # buildroot-op-tee-stm32mp1
-Buildroot based STM32MP1 example for OP-TEE
+Buildroot based STM32MP1 example for OP-TEE. 
+
+TF-A, OP-TEE and Linux Kernel are based on STMs openstlinux-5.4-dunfell-mp1-20-06-24
+
+Last updated on 2020.07.17
 
 ## Clone repository with submodules
 You must clone this project with
 ```
 git clone --recursive https://github.com/schenkmi/buildroot-op-tee-stm32mp1.git
+```
+
+## Preparing (once)
+As we work with submodule for buildroot you need once delete a patch file which STM already has patched in their own repository.
+```
+cd buildroot-op-tee-stm32mp1
+rm buildroot/boot/optee-os/0001-scripts-pem_to_pub_c.py-sign.py-use-pycryptodomex.patch
 ```
 
 ## Build instructions plain Linux
